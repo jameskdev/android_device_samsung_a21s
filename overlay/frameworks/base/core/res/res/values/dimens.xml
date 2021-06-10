@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/*
-** Copyright 2013, The Android Open Source Project
+/* //device/apps/common/assets/res/any/dimens.xml
+**
+** Copyright 2006, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -16,13 +17,9 @@
 ** limitations under the License.
 */
 -->
-
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <bool name="config_voice_capable">true</bool>
-    <bool name="config_sms_capable">true</bool>
-    <string name="config_mainBuiltInDisplayCutout">M 0,0 H 50.28571428571429 V 38.85714285714286 H 0 V 0 Z @dp @left</string>
-    <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
-    <string-array name="config_biometric_sensors" translatable="false" >
-        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
-    </string-array>
+<resources>
+    <dimen name="status_bar_camera_side_padding">18.0px</dimen>
+    <dimen name="status_bar_camera_top_margin">20.0px</dimen>
+    <dimen name="status_bar_height_portrait">68.0px</dimen>
+    <dimen name="status_bar_indicator_corner_padding">40.0px</dimen>
 </resources>

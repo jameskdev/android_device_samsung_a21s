@@ -1,13 +1,35 @@
 ### PLATFORM
-$(call inherit-product, device/samsung/gta4xl-common/platform.mk)
+$(call inherit-product, device/samsung/universal3830-common/platform.mk)
 ### PROPRIETARY VENDOR FILES
-$(call inherit-product, vendor/samsung/gta4xlwifi/gta4xlwifi-vendor.mk)
+$(call inherit-product, vendor/samsung/a21s/a21s-vendor.mk)
 
 ### DALVIK
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-DEVICE_PATH := device/samsung/gta4xlwifi
+DEVICE_PATH := device/samsung/a21s
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
+    
+### NFC and Secure Element packages
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    NfcNci \
+    Tag
+    
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
+    $(DEVICE_PATH)/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
+    frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml
+    
+### Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.samsung
+    
+## RIL
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/ril/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc
