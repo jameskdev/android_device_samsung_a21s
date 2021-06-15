@@ -32,4 +32,4 @@ PRODUCT_PACKAGES += \
     
 ## RIL
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/ril/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc
+    $(DEVICE_PATH)/ril/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc

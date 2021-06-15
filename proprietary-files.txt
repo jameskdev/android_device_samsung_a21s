@@ -1,5 +1,35 @@
 # Proprietary files - from Samsung package version A217NKSU5CUD3, unless pinned
 
+system/lib64/libaptX_encoder.so
+
+### RIL
+system/bin/eris
+system/etc/init/init.rilepdg.rc
+system/etc/eris.conf
+system/lib/libatparser.so
+system/lib/libfactoryutil.so
+system/lib/libfloatingfeature.so
+system/lib/libmdf.so
+system/lib/libomission_avoidance.so
+system/lib/libpacm_client.so
+system/lib/libsecnativefeature.so
+system/lib/libsecril-client.so
+system/lib/libsecure_storage.so
+system/lib/libsemnativecarrierfeature.so
+system/lib64/libatparser.so
+system/lib64/libfactoryutil.so
+system/lib64/liberis_charon.so
+system/lib64/liberis_simaka.so
+system/lib64/liberis_strongswan.so
+system/lib64/libfloatingfeature.so
+system/lib64/libmdf.so
+system/lib64/libomission_avoidance.so
+system/lib64/libpacm_client.so
+system/lib64/libsecnativefeature.so
+system/lib64/libsecril-client.so
+system/lib64/libsecure_storage.so
+system/lib64/libsemnativecarrierfeature.so
+
 ### FIRMWARE
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
@@ -38,6 +68,11 @@ vendor/etc/floating_feature.xml
 vendor/etc/mixer_gains.xml
 vendor/lib/hw/audio.primary.exynos850.so
 
+### SAMSUNG_SLSI_CONFIGSTORE
+vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service
+vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc
+vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so
+
 ### FINGERPRINT
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
@@ -45,7 +80,7 @@ vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib/libgf_in_system_lib.so
 vendor/lib/libqfp_sensortest.so
 vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib64/libbauthserver.so
+vendor/lib64/libbauthserver.so|e82f4cbd7a9d194720a335eab049e5389ded688a
 vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
 vendor/lib64/libgf_in_system_lib.so
@@ -85,7 +120,6 @@ vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 vendor/lib64/nfc_nci_sec.so
 vendor/lib64/libNfcProperties.so
 vendor/etc/libnfc-sec-vendor.conf
-vendor/etc/init/argos.rc
 vendor/etc/init/init.nfc.samsung.rc
 vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
 -vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
@@ -98,6 +132,7 @@ vendor/bin/cass
 vendor/bin/cbd
 vendor/bin/hw/rild
 vendor/bin/secril_config_svc
+vendor/bin/vaultkeeperd
 vendor/etc/mtu-conf.xml
 vendor/etc/pdpcnt-conf.xml
 vendor/etc/plmn_delta.bin
@@ -108,6 +143,8 @@ vendor/etc/locale/plmn_delta_zh-rHK.bin
 vendor/etc/locale/plmn_delta_zh-rTW.bin
 vendor/etc/locale/plmn_delta_zh-rCN.bin
 vendor/etc/locale/plmn_delta_eng.bin
+vendor/etc/init/argos.rc
+vendor/etc/init/cass.rc
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.vendor.rilchip.rc
 vendor/etc/init/init.vendor.rilcommon.rc
@@ -122,6 +159,7 @@ vendor/lib/libsemnativecarrierfeature.so
 vendor/lib/vendor.samsung.hardware.radio@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
+vendor/lib64/libdsms_vendor.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/libmdf.so
 vendor/lib64/libmfb.so
@@ -131,7 +169,9 @@ vendor/lib64/librilutils.so
 vendor/lib64/libsecril-client.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsemnativecarrierfeature.so
+vendor/lib64/libvkservice.so
 vendor/lib64/libvkmanager_vendor.so
+vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
