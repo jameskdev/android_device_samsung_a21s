@@ -5,14 +5,7 @@ service vaultkeeper /vendor/bin/vaultkeeperd
     group system
     disabled
 
-service vaultkeeper_hal /vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
-    class early_hal
-    user system
-    group system
-    disabled
-
 on late-fs
     # vaultkeeper
     mkdir /dev/socket/vaultkeeper 0770 system system
     start vaultkeeper
-    start vaultkeeper_hal
