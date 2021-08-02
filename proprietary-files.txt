@@ -87,6 +87,21 @@ vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
 
+### HEALTH
+vendor/bin/hw/android.hardware.health@2.1-service-samsung
+vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
+-vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
+vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
+vendor/lib/vendor.samsung.hardware.health@2.0.so
+vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
+vendor/lib64/vendor.samsung.hardware.health@2.0.so
+
+### THERMAL
+vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
+vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+
 ### VIB
 vendor/bin/hw/vendor.samsung.hardware.vibrator@2.2-service
 vendor/etc/init/vendor.samsung.hardware.vibrator@2.2-service.rc
