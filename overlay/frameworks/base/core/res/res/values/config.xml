@@ -20,6 +20,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <bool name="config_voice_capable">true</bool>
     <bool name="config_sms_capable">true</bool>
+    <item type="dimen" name="config_screenBrightnessDimFloat">0.050980393</item>
+    <item type="dimen" name="config_screenBrightnessSettingDefaultFloat">0.5019608</item>
+    <item type="dimen" name="config_screenBrightnessSettingMaximumFloat">1.0</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.003921569</item>
+    <integer name="config_screenBrightnessSettingDefault">128</integer>
+    <integer name="config_screenBrightnessSettingMaximum">306</integer>
+    <integer name="config_screenBrightnessSettingMinimum">1</integer>
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H 50.28571428571429 V 38.85714285714286 H 0 V 0 Z @dp @left</string>
     <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
     <string-array name="config_biometric_sensors" translatable="false" >
