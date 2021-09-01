@@ -30,6 +30,43 @@ system/lib64/libsecril-client.so
 system/lib64/libsecure_storage.so
 system/lib64/libsemnativecarrierfeature.so
 
+### SOUND_EFFECTS
+system/lib/libsecaudiocoreutils.so
+system/lib/libsecaudioeventutils.so
+system/lib64/libsecaudiocoreutils.so
+system/lib64/libsecaudioeventutils.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_SoundAlive_play_plus_ver400.so
+vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
+vendor/lib/lib_SamsungRec_07001.so
+vendor/lib/lib_SoundAlive_3DPosition_ver202.so
+vendor/lib/libprofileparamstorage.so
+vendor/lib/libHMT.so
+vendor/lib/lib_soundaliveresampler.so
+vendor/lib/lib_SoundBooster_ver1050.so
+vendor/lib/soundfx/libmyspace.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib/soundfx/libplaybackrecorder.so
+vendor/lib/soundfx/libmysound.so
+vendor/lib/soundfx/libgearvr.so
+vendor/lib/soundfx/libsamsungSoundbooster_plus.so
+vendor/lib/soundfx/libaudiosaplus_sec.so
+vendor/etc/SoundBoosterParam.txt
+vendor/etc/dolby/dax-default.xml
+vendor/lib64/lib_SoundAlive_play_plus_ver400.so
+vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
+vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
+vendor/lib64/libprofileparamstorage.so
+vendor/lib64/libHMT.so
+vendor/lib64/lib_SoundBooster_ver1050.so
+vendor/lib64/soundfx/libmyspace.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libplaybackrecorder.so
+vendor/lib64/soundfx/libmysound.so
+vendor/lib64/soundfx/libgearvr.so
+vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
+vendor/lib64/soundfx/libaudiosaplus_sec.so
+
 ### FIRMWARE
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
