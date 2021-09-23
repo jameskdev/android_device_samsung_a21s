@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_a21sks
-PRODUCT_DEVICE := a21s
+PRODUCT_DEVICE := a21sks
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A217N
 PRODUCT_MANUFACTURER := samsung
@@ -25,6 +25,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=a21sks \
+    PRODUCT_DEVICE := a21s \
     PRIVATE_BUILD_DESC="a21sks-user 11 RP1A.200720.012 $(PRODUCT_PDA_VERSION) release-keys"
 
 BUILD_FINGERPRINT := samsung/a21sks/a21s:11/RP1A.200720.012/$(PRODUCT_PDA_VERSION):user/release-keys
