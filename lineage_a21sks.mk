@@ -3,7 +3,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/a21s/device.mk)
+$(call inherit-product, device/samsung/a21sks/device.mk)
 
 ### LINEAGE
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -12,7 +12,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_a21s
+PRODUCT_NAME := lineage_a21sks
 PRODUCT_DEVICE := a21s
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A217N

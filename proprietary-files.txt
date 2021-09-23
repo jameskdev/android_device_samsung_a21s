@@ -30,6 +30,33 @@ system/lib64/libsecril-client.so
 system/lib64/libsecure_storage.so
 system/lib64/libsemnativecarrierfeature.so
 
+### AUDIO
+vendor/etc/audio_board_info.xml
+vendor/etc/default_volume_tables.xml
+vendor/etc/mixer_paths.xml
+vendor/etc/usb_audio_policy_configuration.xml
+vendor/lib/vndk/libtinyalsa.so
+vendor/lib/vndk/libaudioroute.so
+vendor/lib/libSamsungPostProcessConvertor.so
+vendor/lib/lib_SamsungRec_07001.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_soundaliveresampler.so
+vendor/lib/libaboxpcmdump.so
+vendor/lib/libalsautils_sec.so
+vendor/lib/libaudioproxy.so
+vendor/lib/libdatamod.so
+vendor/lib/libfloatingfeature.so
+vendor/lib/liblastaboxmsg.so
+vendor/lib/librecordalive.so
+vendor/lib/libsecaudioinfo.so
+vendor/lib/soundfx/libaudioeffectoffload.so
+vendor/lib64/libfloatingfeature.so
+vendor/lib64/libsecaudioinfo.so
+vendor/lib64/soundfx/libaudioeffectoffload.so
+vendor/etc/floating_feature.xml
+vendor/etc/mixer_gains.xml
+vendor/lib/hw/audio.primary.exynos850.so
+
 ### SOUND_EFFECTS
 system/lib/libsecaudiocoreutils.so
 system/lib/libsecaudioeventutils.so
@@ -99,11 +126,6 @@ vendor/firmware/tdnr_S5KGM2.json
 vendor/firmware/tdnr_SR846.json
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
-
-### AUDIO
-vendor/etc/floating_feature.xml
-vendor/etc/mixer_gains.xml
-vendor/lib/hw/audio.primary.exynos850.so
 
 ### SAMSUNG_SLSI_CONFIGSTORE
 vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service
@@ -227,6 +249,20 @@ vendor/lib64/vendor.samsung.hardware.radio@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
+
+### SECNATIVE
+vendor/lib/libsecnativefeature.so
+vendor/lib64/libsecnativefeature.so
+
+### TEEGRIS
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/etc/init/teegris_v4.rc
+vendor/lib/libuuid.so
+vendor/lib/libteecl.so
+vendor/lib64/libiwt.so
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so
 
 # TEEGRIS_FIRMWARE
 vendor/tee/00000000-0000-0000-0000-00000000dead

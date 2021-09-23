@@ -1,12 +1,12 @@
 ### PLATFORM
-$(call inherit-product, device/samsung/universal3830-common/platform.mk)
+$(call inherit-product, device/samsung/a21s-common/platform.mk)
 ### PROPRIETARY VENDOR FILES
-$(call inherit-product, vendor/samsung/a21s/a21s-vendor.mk)
+$(call inherit-product, vendor/samsung/a21sks/a21s-vendor.mk)
 
 ### DALVIK
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-DEVICE_PATH := device/samsung/a21s
+DEVICE_PATH := device/samsung/a21sks
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \

@@ -1,2 +1,6 @@
 # RIL
 ro.radio.noril=no
+
+# A217N doesn't have dual sim
+ro.vendor.multisim.simslotcount=1
+persist.radio.multisim.config=ss

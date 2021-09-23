@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/samsung/universal3830-common/BoardConfigPlatform.mk
-include vendor/samsung/a21s/BoardConfigVendor.mk
+include device/samsung/a21s-common/BoardConfigPlatform.mk
+include vendor/samsung/a21sks/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/a21s
+DEVICE_PATH := device/samsung/a21sks
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -40,7 +40,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 # Dynamic Partitions
 BOARD_SUPER_PARTITION_SIZE := 5536481280
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
-BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 5536481280
+BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 5530000000
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     vendor \
