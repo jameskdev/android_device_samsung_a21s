@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=a21s
+export DEVICE=a21sks
 export DEVICE_COMMON=a21s-common
 export VENDOR=samsung
 

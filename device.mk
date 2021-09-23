@@ -1,7 +1,7 @@
 ### PLATFORM
 $(call inherit-product, device/samsung/a21s-common/platform.mk)
 ### PROPRIETARY VENDOR FILES
-$(call inherit-product, vendor/samsung/a21sks/a21s-vendor.mk)
+$(call inherit-product, vendor/samsung/a21sks/a21sks-vendor.mk)
 
 ### DALVIK
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
